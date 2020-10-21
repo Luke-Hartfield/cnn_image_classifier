@@ -1,11 +1,5 @@
 #!/usr/bin/env python
 
-"""Description:
-The test.py is to evaluate your model on the test images.
-***Please make sure this file work properly in your final submission***
-
-©2020 Created by Yiming Peng and Bing Xue
-"""
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 
@@ -34,7 +28,7 @@ def preprocess_data():
     dg = ImageDataGenerator(rescale = 1. / 255)    
     
     # Get path to test images
-    dat_dir = "../ProjectTemplate_python3.8/data/test"
+    dat_dir = "../Project/data/test"
     
     # Get training set
     X = dg.flow_from_directory(dat_dir, target_size = (128, 128),

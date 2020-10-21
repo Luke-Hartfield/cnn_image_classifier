@@ -1,15 +1,5 @@
 #!/usr/bin/env python
 
-"""Description:
-The train.py is to build your CNN model, train the model, and save it for later evaluation(marking)
-This is just a simple template, you feel free to change it according to your own style.
-However, you must make sure:
-1. Your own model is saved to the directory "model" and named as "model.h5"
-2. The "test.py" must work properly with your model, this will be used by tutors for marking.
-3. If you have added any extra pre-processing steps, please make sure you also implement them in "test.py" so that they can later be applied to test images.
-
-©2018 Created by Yiming Peng and Bing Xue
-"""
 from tensorflow import keras
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, Conv2D, Flatten, Dropout, MaxPool2D
